@@ -45,6 +45,9 @@ jobs:
     name: Job Two
     runs-on: ubuntu-latest
     needs: job_1
+    steps:
+      - name: output for job Two
+        run: echo "Hello Ola"
 
   job_3:
     name: Job Three
